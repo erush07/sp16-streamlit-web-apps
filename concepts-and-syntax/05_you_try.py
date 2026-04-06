@@ -43,5 +43,17 @@ st.write("session_state counter value:", st.session_state["counter"])
 # That's because the variable stored in `session_state` persists even when your
 # code is being rerun.
 
+import streamlit as st
+regular_counter = 0
+
+if "counter" not in st.session_state:
+    st.session_state["counter"] = 0
+
+if st.button("Increment"):
+    st.session_state["counter"] += 1
+    regular_counter += 1
+
+st.write("Normal counter value", regular_counter)
+st.write("session_state counter value:", st.session_state["counter"])
 
 

@@ -12,6 +12,8 @@ it). Instead, help me work through it gradually, with clear explanations
 and small, easy-to-understand examples. Please use everyday language and
 explain things in a simple, friendly way.
 
+streamlit run practice/01_practice_greeting_app.py
+
 INSTRUCTIONS:
 -------------
 Create a simple app that asks for the user's name using st.text_input()
@@ -22,3 +24,9 @@ and displays a greeting with st.write() like:
 If the input is empty, show "Please enter your name."
 '''
 
+import streamlit as st
+
+name = st.text_input("What is your name?")
+st.write("Hello,", name, "!")
+if name == "":
+    st.write("Please enter your name.")

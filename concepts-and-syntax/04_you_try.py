@@ -36,4 +36,8 @@ st.button("Click Me")
 # the button. Notice that every time you click it the number above changes.
 # Thats because your entire file is being rerun. Understanding this is key.
 
+import random
+import streamlit as st
 
+st.write(random.randrange(0, 101))  # Why does this generate a new number every time the button is clicked?
+st.button("Click Me")

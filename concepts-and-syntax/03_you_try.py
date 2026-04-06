@@ -34,4 +34,9 @@ st.write("your choice", choice)
 # try adding text_input widgets to get the age and a name and use st.write to
 # display what was entered.
 
+import streamlit as st
 
+name = st.text_input("Enter your name:")
+st.write("Hello,", name)
+favorite_color = st.selectbox("What is your favorite color?", ["Blue", "Green", "Red", "Orange", "Yellow", "Purple"])
+st.write("Your favorite color is:", favorite_color)

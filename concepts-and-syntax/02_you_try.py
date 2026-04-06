@@ -32,3 +32,10 @@ st.write("This app shows sales data for the quarter.")  # normal text
 # try adding some text using `st.write()`. Try adding some with various numbers
 # of #'s. Be sure to save the file, and if it is already reunning, you should
 # see the changes if you press the `rerun` button at the top of the page.
+
+import streamlit as st
+
+st.title("Hello World! Welcome to my Streamlit Web App :)")
+st.write("## Tadaaaaaa!!!")
+st.write("# thank you for coming :)")
+st.write("Goodbye")
