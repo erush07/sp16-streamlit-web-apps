@@ -25,4 +25,12 @@ Otherwise, display:
 Use st.text_input() and st.number_input().
 '''
 
+import streamlit as st
 
+name = st.text_input("Enter your name:")
+age = st.number_input("Enter your age")
+
+if age >= 18:
+    st.write("Welcome, ",name,". You are an adult.")
+else:
+    st.write("Sorry, ", name, ". You must be at least 18.")
